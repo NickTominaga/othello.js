@@ -1,12 +1,28 @@
 <!doctype html>
-<html>
-<head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.2/react.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.2/JSXTransformer.js"></script>
-</head>
-<body>
-  <div id="othello"></div>
-  <script src="/socket.io/socket.io.js"></script>
-  <script src="bundle.js"> </script>
-</body>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Othello Express Sandbox</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="game-layout">
+      <section>
+        <div id="board" class="board" aria-label="othello board"></div>
+      </section>
+      <aside class="panel">
+        <h1>Othello</h1>
+        <p id="score">X: 2 | O: 2</p>
+        <p id="status">Next player: X</p>
+        <div class="actions">
+          <button id="pass-button">Pass</button>
+          <button id="giveup-button">Give up</button>
+          <button id="reset-button">Reset</button>
+        </div>
+      </aside>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
 </html>
