@@ -3,7 +3,7 @@ const path = require('path');
 const indexRouter = require('./routes/index');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3450;
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
